@@ -8,12 +8,15 @@
         <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="mundyestilos.css">
 </head>
 <body>
-    <div class="search">
-        <div class="icon"></div>
-        <div class="input">
-            <input type="text" placeholder="Serach country..." id="mysearch">
+    <div class="container">
+        <h1>Country-cher</h1>
+        <div class="search">
+            <div class="icon"></div>
+            <div class="input">
+                <input type="text" placeholder="Serach country..." id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
         </div>
-        <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
     </div>
     <script>
         const icon = document.querySelector('.icon');

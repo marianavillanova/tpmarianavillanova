@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    font-family: 'MonteCarlo', sans-serif;
+    color:rgb(9, 53, 9);
+    font-size: 125px;
 }
 
 body {
@@ -16,6 +25,12 @@ body {
     background-position: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .search {
     position: relative;
     width: 60px;
