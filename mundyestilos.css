@@ -10,7 +10,7 @@ h1 {
     display: flex;
     font-family: 'MonteCarlo', sans-serif;
     color:rgb(9, 53, 9);
-    font-size: 125px;
+    font-size: 140px;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 .search {
     position: relative;
-    width: 60px;
+    width: 600px;
     height: 60px;
     background-color: white;
     border-radius: 60px;
@@ -42,13 +42,10 @@ body {
     overflow: hidden;
 }
 
-.search.active {
-    width: 600px;
-}
 .search .icon {
     position: relative;
     top:0;
-    left: 0;
+    left: 0px;
     width: 60px;
     height: 60px;
     background-color: white;
@@ -82,7 +79,7 @@ body {
 .search .input {
     position: relative;
     padding: 0;
-    width: 450px;
+    width: 500px;
     height: 60px;
     left: 60px;
     display: flex;
@@ -93,14 +90,16 @@ body {
 .search .input input{
     position: absolute;
     top:0%;
-    width: 100%;
+    width: 300px;
     height: 100%;
+    left: 0;
     border:none;
     outline: none;
     font-size: 18px;
     padding: 10px 0;
     align-items: center;
     justify-content: center;
+    z-index: 2000;
 }
 
 .clear {
