@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 
 * {
     margin: 0;
@@ -8,9 +11,10 @@
 
 h1 {
     display: flex;
-    font-family: 'MonteCarlo', sans-serif;
+    font-family: 'Satisfy', sans-serif;
     color:rgb(9, 53, 9);
     font-size: 140px;
+    text-shadow: 2px 2px 5px rgb(54, 117, 88);
 }
 
 body {
@@ -33,6 +37,9 @@ body {
 }
 .search {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     width: 600px;
     height: 60px;
     background-color: white;
@@ -77,11 +84,11 @@ body {
 }
 
 .search .input {
-    position: relative;
+    position: absolute;
     padding: 0;
     width: 500px;
     height: 60px;
-    left: 60px;
+    left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,17 +96,16 @@ body {
 
 .search .input input{
     position: absolute;
-    top:0%;
-    width: 300px;
+    padding: 0%;
+    width: 400px;
     height: 100%;
-    left: 0;
     border:none;
     outline: none;
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 30px;
+    font-family: 'Amatic SC', sans-serif;
     align-items: center;
-    justify-content: center;
-    z-index: 2000;
+    justify-content:flex-start;
+    z-index: 20;
 }
 
 .clear {
@@ -132,4 +138,21 @@ body {
     height: 15px;
     background: #999;
     transform: rotate(315deg);
+}
+
+.modal-header h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.modal-body {
+    height: 300px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.modal-body ul{
+    list-style: none;
 }

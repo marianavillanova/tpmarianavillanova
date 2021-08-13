@@ -12,39 +12,62 @@
         <h1>Country-cher</h1>
         <div class="search">
             <div class="icon">
-                <div id="mymodal" data-toggle="modal" data-target="#exampleModalCenter">
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle"><h5 id="h5_text_fullname"></h5></h5>
-                            </div>
-                            <div class="modal-body">
-                                <h3 id="h3_text_error"></h3>
-                                <h5 id="h5_text_region"></h5>
-                                <h5 id="h5_text_capital"></h5>
-                                <h5 id="h5_text_border"></h5>
-                                <h5 id="h5_text_alphacode"></h5>
-                                <h5 id="h5_text_currency"></h5>
-                                <h5 id="h5_text_population"></h5>
-                                <h5 id="h5_text_demonym"></h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="input">
-                        <input type="text" placeholder="Search country..." id="input_text">
-                    </div>
             </div>
-            <span class="clear" onclick="document.getElementById('mysearch').value=''"></span>
+            <div class="input">
+                <input type="text" placeholder="Search country..." id="input_text">
+            </div>
+            <span class="clear" onclick="document.getElementById('input_text').value=''"></span>
+        </div>
+    </div>
+
+    <div id="mymodal" data-toggle="modal" data-target="#exampleModalCenter">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h2 class="modal-title text-center" id="exampleModalLongTitlec"><h2 class="modal-title text-center" id="h2_text_fullname"></h2></h2>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li id="li_text_region"></h5>
+                        <li id="li_text_capital"></li>
+                        <li id="li_text_border"></h5>
+                        <li id="li_text_alphacode"></h5>
+                        <li id="li_text_currency"></h5>
+                        <li id="li_text_population"></h5>
+                        <li id="li_text_demonym"></h5>
+                    </ul>
+                    <h3 id="h3_text_error"></h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title">Warning</h4>
+            </div>
+      
+            <div class="modal-body">
+              <p><i>ATTENTION:</i> the value inserted is not valid, please check for any mistakes and try again.</p>
+            </div>
+      
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="mundyjava.js"></script>
 </body>
 </html>
