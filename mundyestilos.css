@@ -140,13 +140,24 @@ body {
     transform: rotate(315deg);
 }
 
-.modal-header h2 {
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Amatic SC', sans-serif;
     font-size: 30px;
     font-weight: bolder;
+    text-align: center;
 }
 
-.modal-body {
+.modal-title h2{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal .modal-body {
     height: 300px;
     font-family: 'Amatic SC', sans-serif;
     font-size: 27px;
@@ -156,3 +167,4 @@ body {
 .modal-body ul{
     list-style: none;
 }
+

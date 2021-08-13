@@ -26,6 +26,7 @@ icon.addEventListener('click', function(e) {
             console.log(res[0].population)
             console.log(res[0].demonym)
 
+
             const h2_fullname = document.getElementById('h2_text_fullname');
             const li_alphacode = document.getElementById('li_text_alphacode');
             const li_capital= document.getElementById('li_text_capital');
@@ -35,19 +36,20 @@ icon.addEventListener('click', function(e) {
             const li_population = document.getElementById('li_text_population');
             const li_demonym = document.getElementById('li_text_demonym');
 
-
             h2_fullname.innerText= `${res[0].name}`
             li_capital.innerText= `Capital: ${res[0].capital}`
             li_subregion.innerText=`Region: ${res[0].subregion}`
             li_border.innerText = `Language: ${res[0].languages[0].name}`
             li_alphacode.innerText= `Alpha code 3: ${res[0].alpha3Code}`
             li_currency.innerText = `Currency: ${res[0].currencies[0].symbol} ${res[0].currencies[0].name}`
-            li_population.innerText= `Population: ${res[0].population}`
+            li_population.innerText= `Population: ${res[0].population} inhabitants`
             li_demonym.innerText= `Demonym: ${res[0].demonym}`
 
-
+            if (res.name == "") or (res.name == null); or (res.name==undefined); {
+                $('#Modal1').modal('show');
+            }
             }
             );
-    }
+    } return 
     }
 ,);
